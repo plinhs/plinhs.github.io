@@ -92,6 +92,7 @@ input[type="submit"]:hover {
     gap: 70px;
     font-size: 25px;
     justify-content: center;
+    
   }
 
   .navbar a{
@@ -172,6 +173,7 @@ input[type="submit"]:hover {
 
         .navbar {
             flex-wrap: wrap ;
+            font-size: 17px;
           }
 
           .form-context-container{
