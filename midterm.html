@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelin Midterm</title>
+    <link rel="stylesheet" href="midterm.css">
+
+</head>
+
+<body>
+    <form action="submit.html" method="get" onsubmit="return validateForm()">
+
+        <nav class="navbar">
+            <a href="/midterm.html">Home</a>
+            <a href="/empty.html">Categories</a>
+            <a href="/empty.html">About</a>
+            <a href="/empty.html">Contact</a>
+
+        </nav>
+
+        <div class="sticky-ad left-ad" id="left-ad">
+            <a href="https://www.netflix.com" target="_blank">
+              <img src="/ad.png" alt="Left Ad">
+            </a>
+            <button class="close" type="button" onclick="closeAd('left-ad')">x</button>
+          </div>
+          <div class="sticky-ad right-ad" id="right-ad">
+            <a href="https://www.netflix.com" target="_blank">
+              <img src="/ad.png" alt="Right Ad">
+            </a>
+            <button class="close" type="button" onclick="closeAd('right-ad')">x</button>
+          </div>
+
+
+        <div class="form-container">
+            <div class="transparent-bg">
+                <div class="form-context-container">
+                    <div class="input-title">Name:</div>
+                    <div class="name-surname">
+                        <div class="input"><input type="text" required id="name-input" placeholder="Enter name"></div>
+                        <div class="input"><input type="text" required id="surname-input" placeholder="Enter surname">
+                        </div>
+                    </div>
+                    <div class="input-title">Company:</div>
+                    <div class="input">
+                        <select id="company" required >
+                            <option value="0" selected disabled>Choose company</option>
+                        </select>
+                    </div>
+                    <div class="input-title">Email:</div>
+                    <div class="input"><input type="email" required id="email-input" placeholder="Enter email"></div>
+                    <div class="input-title">Phone:</div>
+                    <div class="input">
+                        <select id="areaCode" required>
+                            <option value="0" selected disabled>Select area code</option>
+                        </select>
+
+                        <input type="tel" required id="phone-input" placeholder="Enter phone number" maxlength="7">
+                    </div>
+                    <div class="input-title">Subject:</div>
+                    <div class="input">
+                        <select id="subject" required>
+                            <option value="0" selected disabled>Choose subject</option>
+                        </select>
+                    </div>
+                    <div class="input-title">Are you a beginner?</div>
+                    <div name="space"></div>
+                    <div class="input">
+
+                        <input type="radio" name="radio-btn" value="yes">Yes
+                        <input type="radio" name="radio-btn" value="no">No
+
+                    </div>
+                    <div name="space"></div>
+
+                    <div class="submit-button">
+                        <input type="submit" value="Submit" >
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
